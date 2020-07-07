@@ -1,0 +1,56 @@
+{
+    "editor.detectIndentation": true,
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
+    "explorer.openEditors.visible": 0,
+    "extensions.ignoreRecommendations": false,
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true,
+        "**/.vscode": true,
+        "**/venv": true
+    },
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.rendererType": "dom",
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "window.zoomLevel": 1,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "git.decorations.enabled": false,
+    "editor.formatOnSave": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "workbench.colorTheme": "Darcula Theme 2.0",
+    "editor.suggestSelection": "first",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.iconTheme": "ayu",
+    "workbench.settings.editor": "json",
+    "workbench.settings.openDefaultSettings": true,
+    "workbench.settings.useSplitJSON": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.clearPreviousOutput": true,
+    "python.languageServer": "Microsoft",
+    "editor.columnSelection": false,
+    "python.linting.flake8Args": [
+        "--max-line-length=120",
+        "--ignore=E402,F841,E302,E305",
+    ],
+    "python.formatting.autopep8Args": [
+        "--max-line-length=120"
+    ],
+    "files.associations": {
+        "*.py": "python"
+    },
+    "tabnine.experimentalAutoImports": true
+}
+
