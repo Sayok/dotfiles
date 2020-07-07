@@ -1,0 +1,100 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"test_case": {
+		"prefix": "tc",
+		"body": [
+			"@refs('')",
+			"@t_id('')",
+			"def test_():",
+			"\t\"\"\" Check ",
+			"",
+			"\tPreconditions",
+			"\t-------------",
+			"",
+			"\tSteps",
+			"\t-----",
+			"",
+			"\tExpected result",
+			"\t---------------",
+			"\t\"\"\""
+		]
+	},
+	"test_case_section": {
+		"prefix": "tcs",
+		"body": [
+			"@section('')",
+			"@refs('')",
+			"@t_id('')",
+			"def test_():",
+			"\t\"\"\" Check ",
+			"",
+			"\tPreconditions",
+			"\t-------------",
+			"",
+			"\tSteps",
+			"\t-----",
+			"",
+			"\tExpected result",
+			"\t---------------",
+			"\t\"\"\""
+		]
+	},
+	"breakpoint": {
+		"prefix": "bp",
+		"body": "import ipdb;ipdb.set_trace()"
+	},
+	"marks_rt": {
+		"prefix": "tcrt",
+		"body": [
+			"import pytest",
+			"\n",
+			"refs = pytest.mark.refs",
+			"t_id = pytest.mark.t_id"
+		]
+	},
+	"marks_srt": {
+		"prefix": "tcsrt",
+		"body": [
+			"section = pytest.mark.section",
+			"refs = pytest.mark.refs",
+			"t_id = pytest.mark.t_id"
+		]
+	},
+	"page": {
+		"prefix": "page",
+		"body": [
+			"from ttf_core.libs.ui.page import BasePage",
+			"from src import settings",
+			"from .components import PageComponentSet",
+			"\n",
+			"class Page(BasePage, PageComponentSet):",
+			"\tdef __init__(self):",
+			"\t\tself.call_parent_classes_inits()",
+			"\t\tself.base_url = settings.PORTAL_URL",
+			"\t\tself.relative_url = \"\""
+		]
+	},
+	"component": {
+		"prefix": "comp",
+		"body": [
+			"from ttf_selene.support.jquery_style_selectors import s, ss",
+			"\n",
+			"class PageComponentSet:",
+			"\tdef __init__(self):",
+			"\t\tself.element = s(\"\")"
+		]
+	}
+}
+
