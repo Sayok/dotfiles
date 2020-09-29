@@ -1,6 +1,7 @@
 {
     "editor.detectIndentation": true,
     "editor.fontLigatures": true,
+    "editor.fontFamily": "JetBrains Mono",
     "editor.minimap.enabled": false,
     "editor.renderWhitespace": "all",
     "editor.tabSize": 4,
@@ -51,6 +52,8 @@
     "files.associations": {
         "*.py": "python"
     },
-    "tabnine.experimentalAutoImports": true
+    "tabnine.experimentalAutoImports": true,
+    "python.autoUpdateLanguageServer": true,
+    "diffEditor.ignoreTrimWhitespace": false
 }
 
