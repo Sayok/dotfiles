@@ -1,0 +1,28 @@
+{
+    "configurations": [
+
+        {
+            "name": "Python: Remote Attach",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5038
+            },
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "."
+                }
+            ]
+        },
+        {
+            "type": "python",
+            "request": "launch",
+            "name": "Server",
+            "program": "${workspaceRoot}/server.py",
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
